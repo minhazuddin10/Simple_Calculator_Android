@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@drawable/bg_calculator"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Calculator"
+        android:textSize="35sp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/Darkblue"
+        android:textStyle="bold">
+    </TextView>
+
+    <EditText
+        android:id="@+id/first_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="numberSigned"
+        android:hint="Enter The First Number :">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/second_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="numberSigned"
+        android:hint="Enter The Second Number :">
+
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="4"
+        android:layout_marginTop="20dp">
+
+      <Button
+          android:id="@+id/sum_button"
+          android:layout_width="150dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="+"
+          android:textSize="20dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginRight="20dp"
+          android:layout_marginLeft="20dp">
+      </Button>
+
+      <Button
+          android:id="@+id/sub_button"
+          android:layout_width="150dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="-"
+          android:textSize="20dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginRight="20dp"
+          android:layout_marginLeft="20dp">
+      </Button>
+
+      <Button
+          android:id="@+id/mul_button"
+          android:layout_width="150dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="*"
+          android:textSize="20dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginRight="20dp"
+          android:layout_marginLeft="20dp">
+      </Button>
+
+      <Button
+          android:id="@+id/div_button"
+          android:layout_width="150dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="%"
+          android:textSize="20dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginRight="20dp"
+          android:layout_marginLeft="20dp">
+      </Button>
+
+
+
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/final_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="number"
+        android:hint="The Result is :">
+
+    </EditText>
+
+
+  </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
